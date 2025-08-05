@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ecommerce App</title>
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+<body>
+  <section id = 'header'>
+    <a href="#"><img src="/img/logo.png" alt="" class="logo"></a>
+    <div >
+      <ul id="navbar"  >
+       
+        
+        <li><a  href="index.html">Home</a></li>
+        <li><a   href="Shop.html">Shop</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        
+        <li><a href="Contact.html">Contact</a></li>
+        <li id="bag"><a class="active" href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+        <a href="#"><i id="cancel"  class="fa-solid fa-xmark"></i></a>
+
+      </ul>
+    </div>
+    <div id="mobile">
+      <a href="cart.html"><i class="fa-solid fa-cart-shopping" style="color: black;"></i></a>
+     <i id="bar" class="fa-solid fa-outdent"></i>
+    </div>
+  </section>
+  <section id="cart-header">
+    <h2>#cart</h2>
+    <p>Save more with coupons & up to 70% off!</p>
+    
+  </section>
+
+  <section id="cart" class="section-p1">
+    <table width="100%">
+      <thead>
+        <tr>
+        <td>Remove</td>
+        <td>Image</td>
+        <td>Product</td>
+        <td>Price</td>
+        <td>Quantity</td>
+        <td>Subtotal</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><a href="#"><i class="fa-solid fa-xmark"></i></a></td>
+          <td><img src="img/products/f1.jpg" alt=""></td>
+          <td>Cartoon Astronaut T-Shirts</td>
+          <td>$118.19</td>
+          <td><input type="number" value="1"></td>
+          <td>$118</td>
+        </tr>
+        <tr>
+          <td><a href="#"><i class="fa-solid fa-xmark"></i></a></td>
+          <td><img src="img/products/f2.jpg" alt=""></td>
+          <td>Flower T-Shirts</td>
+          <td>$128.19</td>
+          <td><input type="number" value="1"></td>
+          <td>$128</td>
+        </tr>
+        <tr>
+          <td><a href="#"><i class="fa-solid fa-xmark"></i></a></td>
+          <td><img src="img/products/f3.jpg" alt=""></td>
+          <td>Designer T-Shirts</td>
+          <td>$100.99</td>
+          <td><input type="number" value="1"></td>
+          <td>$100</td>
+        </tr>
+      </tbody>
+    </table>
+
+  </section>
+
+  <section id="cart-add" class="section-p1">
+    <div id="coupon">
+      <h3>Apply Coupon</h3>
+      <div>
+        <input style="padding: 10px;margin: 10px 0px;"  type="text" placeholder="Enter coupon code">
+        <button style="padding: 10px 20px;background-color: rgba(44, 151, 74, 0.655);border: none;" >Apply</button>
+      </div>
+    </div>
+    <div id="subtotal">
+      <h3>Cart Total</h3>
+      <table>
+        
+          <tr>
+            <td>Cart Subtotal</td>
+            <td>$346</td>
+          </tr>
+          <tr>
+            <td>Shipping</td>
+            <td>Free</td>
+          </tr>
+          <tr>
+            <td><strong>Total</strong></td>
+            <td><strong>$346</strong></td>
+          </tr>
+        
+      </table>
+      <button class="normal">Proceed to pay</button>
+    </div>
+  </section>
+
+
+  <section id="footer" class="section-p1">
+    <div class="column1">
+      <img src="img/logo.png" alt="">
+      <h4>Contact</h4>
+      <p><Strong>Address</Strong>: Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae</p>
+      <p><Strong>Phone</Strong>: 987654321</p>
+      <p><Strong>Hours</Strong>: 10:00 to 9:00, Mon-fri</p>
+      <div class="follow">
+        <h4>Follow us</h4>
+        <div class="icons">
+          <i class="fa-brands fa-facebook"></i>
+         
+          <i class="fa-brands fa-instagram"></i>
+        </div>
+      </div>
+    </div>
+    <div class="column1">
+      <h4>About</h4>
+      <p>About us</p>
+      <p>Delivery Information</p>
+      <p>Privacy Policy</p>
+      <p>Terms & Conditions</p>
+      <p>Contact us</p>
+
+    </div>
+    <div class="column1">
+      <h4>My Account</h4>
+      <p>Sign In</p>
+      <p>View Cart</p>
+      <p>My Wishlist</p>
+      <p>Track My Order</p>
+      <p>Help</p>
+    </div>
+    <div class="column1">
+      <h4>Install App</h4>
+      <p>From App Store or Goole Play</p>
+      <div class="stores">
+        <button>
+         <img src="img/pay/app.jpg" alt="">
+         
+        </button>
+        <button>
+         <img src="img/pay/play.jpg" alt="">
+         
+        </button>
+
+      </div>
+      <p>Secured payment Gateway</p>
+      <img src="img/pay/pay.png" alt="">
+    </div>
+  </section>
+  <script src="/script.js">
+    
+
+    
+  </script>
+  <script>
+    
+    let products = document.querySelector('.products')
+    products.addEventListener('click',()=>{
+      window.location.href='singleproduct.html'
+    })
+  </script>
+  
+</body>
+</html>
